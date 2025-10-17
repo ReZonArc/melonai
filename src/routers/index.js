@@ -28,6 +28,7 @@ const modules = [
   'payment',
   'membership_plan',
   'recharge_product',
+  'opencog',
 ];
 
 for (const module of modules) {

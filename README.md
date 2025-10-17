@@ -1,24 +1,99 @@
 
-# Lemon AI​ is the first Full-stack, Open-source, Agentic AI framework, offering a ​fully local alternative​ to platforms like Manus & Genspark AI. It features an integrated Code Interpreter VM sandbox for safe execution.​​
+# MelonAI - OpenCog Enhanced LemonAI 🧠
+
+*The first full-stack, open-source, agentic AI framework with advanced cognitive capabilities powered by OpenCog*
 
 <div align=center>
   <img src="./public/img/Lemon_logo.png" width="400">
 </div>
 <p align="center">
-  <a href="https://lemon-11.gitbook.io/lemonai">Get to know Lemon AI quickly</a> ·
+  <a href="https://lemon-11.gitbook.io/lemonai">Get to know MelonAI quickly</a> ·
   <a href="https://lemon-11.gitbook.io/lemonai/development-deployment-guidelines/docker-quick-deployment">Docker Quick Deployment</a> ·
   <a href="https://lemon-11.gitbook.io/lemonai/">Documentation</a> ·
   <a href="https://lemonai.cc/">Download the desktop app for macOS & Windows</a> ·
-  <a href="https://deepwiki.com/hexdocom/lemonai">DeepWiki</a> 
+  <a href="https://deepwiki.com/hexdocom/lemonai">DeepWiki</a> ·
+  <a href="./OPENCOG_README.md">🧠 OpenCog Documentation</a>
 </p>
 
 <p align="center">
   <a href="./README.md"><img alt="README in English" src="https://img.shields.io/badge/English-d9d9d9"></a>
   <a href="./README_CN.md"><img alt="简体中文版自述文件" src="https://img.shields.io/badge/简体中文-d9d9d9"></a>
+  <a href="./OPENCOG_README.md"><img alt="OpenCog Documentation" src="https://img.shields.io/badge/OpenCog-FF6B6B"></a>
 </p>
 
+## 🚀 What's New: OpenCog Integration
 
-**Lemon AI​** is the first **​full-stack, open-source, agentic AI framework**, offering a **​fully local alternative​** to platforms like **Manus & Genspark AI. It features an integrated Code Interpreter VM sandbox for safe execution**.​​
+**MelonAI** now features a complete **OpenCog** implementation, bringing advanced **Artificial General Intelligence (AGI)** capabilities to the LemonAI framework. This enhancement provides:
+
+### 🧠 Advanced Cognitive Capabilities
+- **Probabilistic Logic Networks (PLN)**: Uncertain reasoning and inference
+- **Economic Attention Allocation (ECAN)**: Intelligent resource management
+- **AtomSpace**: Graph-based knowledge representation
+- **CogServer**: Cognitive process scheduling and management
+
+### 🔬 Key Cognitive Features
+- **Probabilistic Reasoning**: Handle uncertainty and incomplete information
+- **Attention Management**: Focus on the most important knowledge
+- **Knowledge Integration**: Seamlessly combine different types of information
+- **Cognitive Reflection**: Learn from successes and failures
+- **Advanced Planning**: Use inferred knowledge for better decision-making
+
+### 🌟 Enhanced Agent Capabilities
+```javascript
+// Create an OpenCog-enhanced agent
+const OpenCogAgent = require('./src/agent/opencog/OpenCogAgent');
+const agent = new OpenCogAgent({
+  conversation_id: 'conv_123',
+  openCogConfig: {
+    enablePeriodicInference: true,
+    enableAttentionAllocation: true
+  }
+});
+
+// Run with cognitive enhancement
+await agent.run('Build a complex web application with AI features');
+```
+
+---
+
+## 🧠 OpenCog Enhanced Intelligence
+
+**MelonAI** represents a groundbreaking evolution of LemonAI, now powered by **OpenCog** - the world's leading open-source AGI framework. This integration brings:
+
+### 🎯 Cognitive Architecture
+- **AtomSpace**: Advanced graph database for knowledge representation
+- **PLN (Probabilistic Logic Networks)**: Handles uncertainty and probabilistic reasoning
+- **ECAN (Economic Attention Allocation)**: Manages cognitive resources intelligently
+- **CogServer**: Orchestrates cognitive processes and algorithms
+
+### 🔍 Enhanced Reasoning Capabilities
+- **Uncertain Inference**: Make decisions with incomplete information
+- **Knowledge Integration**: Combine multiple sources of knowledge seamlessly
+- **Attention Management**: Focus on the most relevant information
+- **Memory Consolidation**: Learn and remember important patterns
+
+### 🚀 OpenCog API Integration
+MelonAI exposes OpenCog capabilities through RESTful APIs:
+
+```bash
+# Add knowledge
+curl -X POST http://localhost:5005/api/opencog/knowledge \
+  -d '{"conversation_id": "conv_123", "type": "concept", "content": "machine learning"}'
+
+# Perform inference
+curl -X POST http://localhost:5005/api/opencog/inference \
+  -d '{"conversation_id": "conv_123", "options": {"maxIterations": 50}}'
+
+# Get cognitive insights
+curl http://localhost:5005/api/opencog/insights?conversation_id=conv_123
+```
+
+### 📖 Learn More
+For detailed documentation on OpenCog features, see [**OpenCog Documentation**](./OPENCOG_README.md).
+
+---
+
+**Lemon AI** is the first **full-stack, open-source, agentic AI framework**, offering a **fully local alternative** to platforms like **Manus & Genspark AI. It features an integrated Code Interpreter VM sandbox for safe execution**.
 
 **​Lemon AI empowers deep research, web browsing, viable coding, and data analysis – running entirely on your local hardware.​​** It supports ​**planning, action, reflection, and memory​** functionalities using **​local LLMs**​ (like DeepSeek, Qwen, Llama, Gemma) via **Ollama**, ensuring **​complete privacy and zero cloud dependency.**
 
